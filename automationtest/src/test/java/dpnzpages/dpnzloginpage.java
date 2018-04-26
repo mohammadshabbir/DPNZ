@@ -6,7 +6,7 @@ import org.openqa.selenium.WebDriver;
 public class dpnzloginpage {
 	By loginemailid=By.id("loginform-email");
 	By password=By.id("loginform-password");
-	By logsubmit=By.className("tg-btn");
+	By logsubmit=By.xpath(".//*[@id='dp-login-form']/fieldset/button");
 	
 	WebDriver driver;
 	public dpnzloginpage(WebDriver driver) {

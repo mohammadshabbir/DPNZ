@@ -5,9 +5,9 @@
     <classes>
       <class name="dpnztestcases.dpnzSprint1">
         <methods>
+          <include name="invalidnullloginTest"/>
           <include name="closeApplication"/>
           <include name="launchurl"/>
-          <include name="validlogin"/>
         </methods>
       </class> <!-- dpnztestcases.dpnzSprint1 -->
     </classes>

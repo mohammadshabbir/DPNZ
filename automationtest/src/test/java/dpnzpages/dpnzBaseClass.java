@@ -28,14 +28,14 @@ public class dpnzBaseClass {
 	@BeforeMethod
 	public void launchurl() throws Exception {
 		
-		Reporter.log("=====Browser Session Started=====", true);  
+		
 		ReadPropertyFile data=new ReadPropertyFile();
         System.setProperty("webdriver.chrome.driver", data.Chromedriver());
         driver=new ChromeDriver();
         driver.manage().window().maximize();
         driver.get(data.getUrl());
         Thread.sleep(5000);
-        Reporter.log("=====Application Started=====", true);
+      
         
     	
 
@@ -67,7 +67,7 @@ public class dpnzBaseClass {
 
 
 	driver.quit();
-	Reporter.log("=====Browser Session End=====", true);
+
 		
 	}
 
