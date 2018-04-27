@@ -3,34 +3,42 @@ package dpnztestcases;
 
 
 import org.openqa.selenium.By;
+import org.openqa.selenium.WebElement;
 import org.testng.Assert;
 import org.testng.annotations.Test;
-import dpnzpages.dpnzBaseClass;
-import dpnzpages.dpnzhomepage ;
-import dpnzpages.dpnzloginpage;
+import dpnzpages.DPNZBaseClass;
+import dpnzpages.DPNZhomepage ;
+import dpnzpages.DPNZloginpage;
 import utilities.ReadPropertyFile;
 
-public class DPNZloginTest extends dpnzBaseClass {
+public class DPNZloginTest extends DPNZBaseClass {
 	
 @Test
 public void validloginTest() throws Exception {
 		ReadPropertyFile data=new ReadPropertyFile();
-		dpnzhomepage hp=new dpnzhomepage(driver);
+		DPNZhomepage hp=new DPNZhomepage(driver);
 		hp.clickonloginlink();
 		
-		dpnzloginpage lp=new dpnzloginpage(driver);
+		DPNZloginpage lp=new DPNZloginpage(driver);
 		lp.enterloginemailid(data.getUserName());
 		lp.enterpassword(data.getPassword());
 		lp.clickloginsubmitbutton();
+		Thread.sleep(5000);
+		String a=driver.findElement(By.id("tg-adminnav")).getText();
+		System.out.println(a);
+		Assert.assertEquals(a, "Hi! mohammad shabbir");
+		driver.findElement(By.id("tg-adminnav")).click();
+		driver.findElement(By.partialLinkText("Logout")).click();
+		
 		
 	}
 @Test
 public void invalidpswdloginTest() throws Exception {
 	ReadPropertyFile data=new ReadPropertyFile();
-	dpnzhomepage hp=new dpnzhomepage(driver);
+	DPNZhomepage hp=new DPNZhomepage(driver);
 	hp.clickonloginlink();
 	
-	dpnzloginpage lp=new dpnzloginpage(driver);
+	DPNZloginpage lp=new DPNZloginpage(driver);
 	lp.enterloginemailid(data.getUserName());
 	lp.enterpassword("shabbir");
 	Thread.sleep(5000);
@@ -43,10 +51,10 @@ public void invalidpswdloginTest() throws Exception {
 @Test
 public void invalidusernameloginTest() throws Exception {
 	ReadPropertyFile data=new ReadPropertyFile();
-	dpnzhomepage hp=new dpnzhomepage(driver);
+	DPNZhomepage hp=new DPNZhomepage(driver);
 	hp.clickonloginlink();
 	
-	dpnzloginpage lp=new dpnzloginpage(driver);
+	DPNZloginpage lp=new DPNZloginpage(driver);
 	lp.enterloginemailid("mohammad@123.com");
 	lp.enterpassword(data.getPassword());
 	lp.clickloginsubmitbutton();
@@ -60,10 +68,10 @@ public void invalidusernameloginTest() throws Exception {
 @Test
 public void invalidnullpwdloginTest() throws Exception {
 		ReadPropertyFile data=new ReadPropertyFile();
-		dpnzhomepage hp=new dpnzhomepage(driver);
+		DPNZhomepage hp=new DPNZhomepage(driver);
 		hp.clickonloginlink();
 		
-		dpnzloginpage lp=new dpnzloginpage(driver);
+		DPNZloginpage lp=new DPNZloginpage(driver);
 		lp.enterloginemailid(data.getUserName());
 		lp.enterpassword("");
 		Thread.sleep(5000);
@@ -76,10 +84,10 @@ Assert.assertEquals(a, "Password cannot be blank.");
 @Test
 public void invalidnullusernameloginTest() throws Exception {
 		ReadPropertyFile data=new ReadPropertyFile();
-		dpnzhomepage hp=new dpnzhomepage(driver);
+		DPNZhomepage hp=new DPNZhomepage(driver);
 		hp.clickonloginlink();
 		
-		dpnzloginpage lp=new dpnzloginpage(driver);
+		DPNZloginpage lp=new DPNZloginpage(driver);
 		lp.enterloginemailid("");
 		lp.enterpassword(data.getPassword());
 			
@@ -91,10 +99,10 @@ Assert.assertEquals(a, "Email cannot be blank.");
 @Test
 public void invalidnullloginTest() throws Exception {
 	
-		dpnzhomepage hp=new dpnzhomepage(driver);
+		DPNZhomepage hp=new DPNZhomepage(driver);
 		hp.clickonloginlink();
 		
-		dpnzloginpage lp=new dpnzloginpage(driver);
+		DPNZloginpage lp=new DPNZloginpage(driver);
 		lp.enterloginemailid("");
 		lp.enterpassword("");
 		Thread.sleep(5000);

@@ -2,12 +2,12 @@ package dpnzpages;
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
 
-public class dpnzhomepage {
+public class DPNZhomepage {
 	WebDriver driver;
 	By Login=By.linkText("Login");
 	
 	
-	public dpnzhomepage(WebDriver driver) {
+	public DPNZhomepage(WebDriver driver) {
 		this.driver=driver;
 	}
 	

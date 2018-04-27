@@ -20,7 +20,7 @@ import org.testng.annotations.BeforeMethod;
 
 import utilities.ReadPropertyFile;
 
-public class dpnzBaseClass {
+public class DPNZBaseClass {
 	public static WebDriver driver;
 	
 	

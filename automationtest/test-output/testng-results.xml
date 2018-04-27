@@ -1,127 +1,32 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results ignored="0" total="6" passed="6" failed="0" skipped="0">
+<testng-results ignored="0" total="1" passed="1" failed="0" skipped="0">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2018-04-26T03:22:29Z" name="Suite" finished-at="2018-04-26T03:24:42Z" duration-ms="132084">
+  <suite started-at="2018-04-27T03:40:16Z" name="Default suite" finished-at="2018-04-27T03:40:42Z" duration-ms="26482">
     <groups>
     </groups>
-    <test started-at="2018-04-26T03:22:29Z" name="Test" finished-at="2018-04-26T03:24:42Z" duration-ms="132084">
-      <class name="dpnztestcases.DPNZloginTest">
-        <test-method is-config="true" signature="launchurl()[pri:0, instance:dpnztestcases.DPNZloginTest@7a675056]" started-at="2018-04-26T03:22:29Z" name="launchurl" finished-at="2018-04-26T03:22:43Z" duration-ms="13681" status="PASS">
+    <test started-at="2018-04-27T03:40:16Z" name="Default test" finished-at="2018-04-27T03:40:42Z" duration-ms="26482">
+      <class name="dpnztestcases.DPNZsignupTest">
+        <test-method is-config="true" signature="launchurl()[pri:0, instance:dpnztestcases.DPNZsignupTest@10d68fcd]" started-at="2018-04-27T03:40:16Z" name="launchurl" finished-at="2018-04-27T03:40:28Z" duration-ms="12831" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- launchurl -->
-        <test-method signature="invalidnullloginTest()[pri:0, instance:dpnztestcases.DPNZloginTest@7a675056]" started-at="2018-04-26T03:22:43Z" name="invalidnullloginTest" finished-at="2018-04-26T03:22:55Z" duration-ms="11430" status="PASS">
+        <test-method signature="validsignupTest()[pri:0, instance:dpnztestcases.DPNZsignupTest@10d68fcd]" started-at="2018-04-27T03:40:28Z" name="validsignupTest" finished-at="2018-04-27T03:40:41Z" duration-ms="12709" status="PASS">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- invalidnullloginTest -->
-        <test-method is-config="true" signature="closeApplication(org.testng.ITestResult)[pri:0, instance:dpnztestcases.DPNZloginTest@7a675056]" started-at="2018-04-26T03:22:55Z" name="closeApplication" finished-at="2018-04-26T03:22:55Z" duration-ms="941" status="PASS">
+        </test-method> <!-- validsignupTest -->
+        <test-method is-config="true" signature="closeApplication(org.testng.ITestResult)[pri:0, instance:dpnztestcases.DPNZsignupTest@10d68fcd]" started-at="2018-04-27T03:40:41Z" name="closeApplication" finished-at="2018-04-27T03:40:42Z" duration-ms="909" status="PASS">
           <params>
             <param index="0">
               <value>
-                <![CDATA[[TestResult name=invalidnullloginTest status=SUCCESS method=DPNZloginTest.invalidnullloginTest()[pri:0, instance:dpnztestcases.DPNZloginTest@7a675056] output={null}]]]>
+                <![CDATA[[TestResult name=validsignupTest status=SUCCESS method=DPNZsignupTest.validsignupTest()[pri:0, instance:dpnztestcases.DPNZsignupTest@10d68fcd] output={null}]]]>
               </value>
             </param>
           </params>
           <reporter-output>
           </reporter-output>
         </test-method> <!-- closeApplication -->
-        <test-method is-config="true" signature="launchurl()[pri:0, instance:dpnztestcases.DPNZloginTest@7a675056]" started-at="2018-04-26T03:22:55Z" name="launchurl" finished-at="2018-04-26T03:23:08Z" duration-ms="12917" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- launchurl -->
-        <test-method signature="invalidnullpwdloginTest()[pri:0, instance:dpnztestcases.DPNZloginTest@7a675056]" started-at="2018-04-26T03:23:08Z" name="invalidnullpwdloginTest" finished-at="2018-04-26T03:23:20Z" duration-ms="11827" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- invalidnullpwdloginTest -->
-        <test-method is-config="true" signature="closeApplication(org.testng.ITestResult)[pri:0, instance:dpnztestcases.DPNZloginTest@7a675056]" started-at="2018-04-26T03:23:20Z" name="closeApplication" finished-at="2018-04-26T03:23:21Z" duration-ms="934" status="PASS">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[[TestResult name=invalidnullpwdloginTest status=SUCCESS method=DPNZloginTest.invalidnullpwdloginTest()[pri:0, instance:dpnztestcases.DPNZloginTest@7a675056] output={null}]]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- closeApplication -->
-        <test-method is-config="true" signature="launchurl()[pri:0, instance:dpnztestcases.DPNZloginTest@7a675056]" started-at="2018-04-26T03:23:21Z" name="launchurl" finished-at="2018-04-26T03:23:34Z" duration-ms="12946" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- launchurl -->
-        <test-method signature="invalidnullusernameloginTest()[pri:0, instance:dpnztestcases.DPNZloginTest@7a675056]" started-at="2018-04-26T03:23:34Z" name="invalidnullusernameloginTest" finished-at="2018-04-26T03:23:40Z" duration-ms="6341" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- invalidnullusernameloginTest -->
-        <test-method is-config="true" signature="closeApplication(org.testng.ITestResult)[pri:0, instance:dpnztestcases.DPNZloginTest@7a675056]" started-at="2018-04-26T03:23:40Z" name="closeApplication" finished-at="2018-04-26T03:23:41Z" duration-ms="929" status="PASS">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[[TestResult name=invalidnullusernameloginTest status=SUCCESS method=DPNZloginTest.invalidnullusernameloginTest()[pri:0, instance:dpnztestcases.DPNZloginTest@7a675056] output={null}]]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- closeApplication -->
-        <test-method is-config="true" signature="launchurl()[pri:0, instance:dpnztestcases.DPNZloginTest@7a675056]" started-at="2018-04-26T03:23:41Z" name="launchurl" finished-at="2018-04-26T03:23:54Z" duration-ms="12741" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- launchurl -->
-        <test-method signature="invalidpswdloginTest()[pri:0, instance:dpnztestcases.DPNZloginTest@7a675056]" started-at="2018-04-26T03:23:54Z" name="invalidpswdloginTest" finished-at="2018-04-26T03:24:06Z" duration-ms="11645" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- invalidpswdloginTest -->
-        <test-method is-config="true" signature="closeApplication(org.testng.ITestResult)[pri:0, instance:dpnztestcases.DPNZloginTest@7a675056]" started-at="2018-04-26T03:24:06Z" name="closeApplication" finished-at="2018-04-26T03:24:07Z" duration-ms="908" status="PASS">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[[TestResult name=invalidpswdloginTest status=SUCCESS method=DPNZloginTest.invalidpswdloginTest()[pri:0, instance:dpnztestcases.DPNZloginTest@7a675056] output={null}]]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- closeApplication -->
-        <test-method is-config="true" signature="launchurl()[pri:0, instance:dpnztestcases.DPNZloginTest@7a675056]" started-at="2018-04-26T03:24:07Z" name="launchurl" finished-at="2018-04-26T03:24:19Z" duration-ms="12565" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- launchurl -->
-        <test-method signature="invalidusernameloginTest()[pri:0, instance:dpnztestcases.DPNZloginTest@7a675056]" started-at="2018-04-26T03:24:19Z" name="invalidusernameloginTest" finished-at="2018-04-26T03:24:26Z" duration-ms="6656" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- invalidusernameloginTest -->
-        <test-method is-config="true" signature="closeApplication(org.testng.ITestResult)[pri:0, instance:dpnztestcases.DPNZloginTest@7a675056]" started-at="2018-04-26T03:24:26Z" name="closeApplication" finished-at="2018-04-26T03:24:27Z" duration-ms="920" status="PASS">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[[TestResult name=invalidusernameloginTest status=SUCCESS method=DPNZloginTest.invalidusernameloginTest()[pri:0, instance:dpnztestcases.DPNZloginTest@7a675056] output={null}]]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- closeApplication -->
-        <test-method is-config="true" signature="launchurl()[pri:0, instance:dpnztestcases.DPNZloginTest@7a675056]" started-at="2018-04-26T03:24:27Z" name="launchurl" finished-at="2018-04-26T03:24:39Z" duration-ms="12305" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- launchurl -->
-        <test-method signature="validloginTest()[pri:0, instance:dpnztestcases.DPNZloginTest@7a675056]" started-at="2018-04-26T03:24:39Z" name="validloginTest" finished-at="2018-04-26T03:24:41Z" duration-ms="1441" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- validloginTest -->
-        <test-method is-config="true" signature="closeApplication(org.testng.ITestResult)[pri:0, instance:dpnztestcases.DPNZloginTest@7a675056]" started-at="2018-04-26T03:24:41Z" name="closeApplication" finished-at="2018-04-26T03:24:41Z" duration-ms="911" status="PASS">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[[TestResult name=validloginTest status=SUCCESS method=DPNZloginTest.validloginTest()[pri:0, instance:dpnztestcases.DPNZloginTest@7a675056] output={null}]]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- closeApplication -->
-      </class> <!-- dpnztestcases.DPNZloginTest -->
-    </test> <!-- Test -->
-  </suite> <!-- Suite -->
+      </class> <!-- dpnztestcases.DPNZsignupTest -->
+    </test> <!-- Default test -->
+  </suite> <!-- Default suite -->
 </testng-results>
