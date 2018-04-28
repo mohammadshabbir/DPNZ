@@ -10,8 +10,8 @@
       <class name="dpnztestcases.DPNZloginTest">
         <methods>
           <include name="closeApplication"/>
-          <include name="launchurl"/>
           <include name="validloginTest"/>
+          <include name="launchurl"/>
         </methods>
       </class> <!-- dpnztestcases.DPNZloginTest -->
     </classes>

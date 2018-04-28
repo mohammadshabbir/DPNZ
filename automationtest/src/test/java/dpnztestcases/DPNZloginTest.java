@@ -28,6 +28,7 @@ public void validloginTest() throws Exception {
 		System.out.println(a);
 		Assert.assertEquals(a, "Hi! mohammad shabbir");
 		driver.findElement(By.id("tg-adminnav")).click();
+		Thread.sleep(5000);
 		driver.findElement(By.partialLinkText("Logout")).click();
 		
 		

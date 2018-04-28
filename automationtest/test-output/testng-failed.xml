@@ -3,13 +3,13 @@
 <suite name="Failed suite [Default suite]" guice-stage="DEVELOPMENT">
   <test thread-count="5" name="Default test(failed)">
     <classes>
-      <class name="dpnztestcases.DPNZsignupTest">
+      <class name="dpnztestcases.DPNZchangepasswordTest">
         <methods>
-          <include name="validsignupTest"/>
+          <include name="changepasswordTest"/>
           <include name="closeApplication"/>
           <include name="launchurl"/>
         </methods>
-      </class> <!-- dpnztestcases.DPNZsignupTest -->
+      </class> <!-- dpnztestcases.DPNZchangepasswordTest -->
     </classes>
   </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [Default suite] -->

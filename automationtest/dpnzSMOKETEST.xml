@@ -8,6 +8,7 @@
   <test thread-count="5" name="Test">
     <classes>
       <class name="dpnztestcases.DPNZloginTest"/>
+      <class name="dpnztestcases.DPNZsignupTest"></class>
     </classes>
   </test> <!-- Test -->
 </suite> <!-- Suite -->
