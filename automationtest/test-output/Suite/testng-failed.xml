@@ -7,10 +7,17 @@
   </listeners>
   <test thread-count="5" name="Test(failed)">
     <classes>
+      <class name="dpnztestcases.DPNZchangepasswordTest">
+        <methods>
+          <include name="changepasswordTest"/>
+          <include name="closeApplication"/>
+          <include name="launchurl"/>
+        </methods>
+      </class> <!-- dpnztestcases.DPNZchangepasswordTest -->
       <class name="dpnztestcases.DPNZloginTest">
         <methods>
           <include name="closeApplication"/>
-          <include name="validloginTest"/>
+          <include name="invalidnullusernameloginTest"/>
           <include name="launchurl"/>
         </methods>
       </class> <!-- dpnztestcases.DPNZloginTest -->

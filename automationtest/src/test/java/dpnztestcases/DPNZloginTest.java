@@ -33,6 +33,7 @@ public void validloginTest() throws Exception {
 		
 		
 	}
+
 @Test
 public void invalidpswdloginTest() throws Exception {
 	ReadPropertyFile data=new ReadPropertyFile();
